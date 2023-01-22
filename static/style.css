@@ -399,6 +399,10 @@ footer .social_media_icons a:hover i{
     height: 100%;
     padding: 5em 0;
   }
+  .contacts {
+    height: 100%;
+    padding: 5em 0;
+  }
   .about {
     flex-direction: column;
   }
@@ -420,6 +424,19 @@ footer .social_media_icons a:hover i{
     font-size: 5em;
     font-family: var(--font);
   }
+  .contacts {
+    height: 100%;
+    padding: 5em 0;
+  }
+  .contact_box .box {
+    margin: 2em .6em;
+    width: 12em;
+    height: 8em;
+  }
+  .contact_head {
+    font-size: 5em;
+    font-family: var(--font);
+  }
   .about_heading {
     font-size: 5em;
     font-family: var(--font);
@@ -435,6 +452,11 @@ footer .social_media_icons a:hover i{
     font-size: 13px;
   }
   .skill_box .box{
+    margin: 2em 0.5em;
+    width: 12em;
+    height: 8em;
+  }
+  .contact_box .box{
     margin: 2em 0.5em;
     width: 12em;
     height: 8em;
