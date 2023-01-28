@@ -204,9 +204,10 @@
     <section class="contacts center" id="Contacts">
       <p class="contact_head">Wanna Ask Something?</p>
       <div class="contact_box center">
+        <p id="my-form-status"></p>
         <div class="contactform box">
           <div class="formcontainer">
-              <form action="https://formspree.io/f/mdovkbdp" method="POST">
+            <form id="my-form" action="https://formspree.io/f/mlekgbgw" method="POST">
                 <div class="row">
                     <div class="col-25">
                     <label for="fname">First Name</label>
@@ -241,7 +242,7 @@
                 </div>
                 <br>
                 <div class="row">
-                    <input type="submit" value="Submit">
+                    <input type="submit" id="my-form-button" value="Submit">
                 </div>
               </form>
             </div>
@@ -312,6 +313,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="static/particles.js"></script>
+    <script src="static/contact.js"></script>
     <script>
       const toggle = document.getElementById("toggle");
       const btn = document.getElementById("btn");
