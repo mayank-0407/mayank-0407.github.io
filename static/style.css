@@ -43,7 +43,7 @@ body {
 #main::before {
   content: "";
   width: 100%;
-  height: 30em;
+  height: 27.5em;
   position: absolute;
   right: 25em;
   z-index: -1;
