@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="static/images/vector_title.png"/>
     <link rel="stylesheet" href="static/style.css" />
     <link rel="stylesheet" href="static/contact.css" />
+    <link rel="stylesheet" href="static/minipro.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link
@@ -37,7 +38,7 @@
             <h1 class="about_heading">About</h1>
             <p>
                 Hello! My name is Mayank Aggarwal  from india and I'm a web developer.
-                I have a diverse set of skills,ranging from design,to HTML + CSS + javascript and Django.
+                I have a diverse set of skills,ranging from Web-development to Cloud Computing,with DSA Problem Solving.
             </p>
             <br>"Ultimately, saying that you don't care about privacy because you have nothing to hide is no different from saying you don't care about freedom of speech because you have nothing to say."
             </br>			
@@ -48,8 +49,17 @@
       <p class="skill_head">Skills</p>
       <div class="skill_box center">
         <div class="box">
+          <i class="fas fa fa-4x"></i>
+          <img src="static/images/c_blackandwhitelogo.png" style="width: fit-content; height: 90px;">
+          <p>C / C++ </p>
+        </div>
+        <div class="box">
           <i class="fab fa-html5 fa-4x"></i>
           <p>HTML</p>
+        </div>
+        <div class="box">
+          <i class="fab fa-docker fa-4x"></i>
+          <p>Docker</p>
         </div>
         <div class="box">
           <i class="fab fa-css3-alt fa-4x"></i>
@@ -71,16 +81,11 @@
           <i class="fas fa-desktop fa-4x"></i>
           <p>Bug hunting </p>
         </div>
-        <div class="box">
-          <i class="fas fa fa-4x"></i>
-          <img src="static/images/c_blackandwhitelogo.png" style="width: fit-content; height: 90px;">
-          <p>C / C++ </p>
-        </div>
       </div>
     </section>
     <!-- Projects -->
     <section class="projects center" id="Projects">
-      <h1 class="project_heading">Projects</h1>
+      <h1 class="project_heading">Major Projects</h1>
       <div class="container center">
         <div class="main_box center">
           <div class="icon center">
@@ -102,7 +107,7 @@
         </div>
         <div class="main_box center">
           <div class="icon center">
-            <i class="fas fa-warehouse"></i>
+            <i class="fas fa-brain"></i>
           </div>
           <div class="box">
             <h1>Flappy Bird</h1>
@@ -120,7 +125,7 @@
         </div>
         <div class="main_box center">
           <div class="icon center">
-            <i class="fas fa-warehouse"></i>
+            <i class="fas fa-bank"></i>
           </div>
           <div class="box">
             <h1>ResourceHub</h1>
@@ -173,73 +178,76 @@
             </div>
           </div>
         </div>
-        <div class="main_box center">
-          <div class="icon center">
-            <i class="fas fa-gamepad"></i>
-          </div>
-          <div class="box">
-            <h1>Playzone</h1>
-            <p>
-              An webpage for playing games is been made with HTML CSS and Javascript. At a time TicTacToe game is available there.
-            </p>
-            <div class="links">
-              <a
-                href="https://github.com/mayank-0407/playzone"
-                target="_blank_"
-                >Github Repo<i class="fas fa-arrow-right"></i
-              ></a>
+      </section>
+      <section class="projects mini_proj center" id="Projects">
+        <h1 class="project_heading">Mini Projects</h1>
+        <div class="container center">
+          <div class="main_box center">
+            <div class="icon center">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="box">
+              <h1>Playzone</h1>
+              <p>
+                An webpage for playing games is been made with HTML CSS and Javascript. At a time TicTacToe game is available there.
+              </p>
+              <div class="links">
                 <a
-                  href="https://mayank-0407.github.io/playzone/"
+                  href="https://github.com/mayank-0407/playzone"
                   target="_blank_"
-                  >Try once?<i class="fas fa-arrow-right"></i
+                  >Github Repo<i class="fas fa-arrow-right"></i
                 ></a>
+                  <a
+                    href="https://mayank-0407.github.io/playzone/"
+                    target="_blank_"
+                    >Try once?<i class="fas fa-arrow-right"></i
+                  ></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="main_box center">
-          <div class="icon center">
-            <i class="fas fa-cloud"></i>
+          <div class="main_box center">
+            <div class="icon center">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <div class="box">
+              <h1>Weather App</h1>
+              <p>
+                Weather App using HTML, CSS, JS and Django. https://openweathermap.org/api
+                api used for this project
+              </p>            
+              <div class="links">
+                <a
+                  href="https://github.com/mayank-0407/clearsky.git"
+                  target="_blank_"
+                  >Github Repo<i class="fas fa-arrow-right"></i
+                  ></a>
+              </div>
+            </div>
           </div>
-          <div class="box">
-            <h1>Weather App</h1>
-            <p>
-              Weather App using HTML, CSS, JS and Django. https://openweathermap.org/api
-              api used for this project
-            </p>            
-            <div class="links">
-              <a
-                href="https://github.com/mayank-0407/clearsky.git"
-                target="_blank_"
-                >Github Repo<i class="fas fa-arrow-right"></i
+          <div class="main_box center">
+            <div class="icon center">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="box">
+              <h1>BookDesk</h1>
+              <p>
+                An Server for Comapny Was made where they can add Their staff and Employee's
+                and Employees can Book their Desk for max 2 days.
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/mayank-0407/book-anywhere.git"
+                  target="_blank_"
+                  >Github Repo<i class="fas fa-arrow-right"></i
                 ></a>
+                <a
+                  href="https://mayank21121.pythonanywhere.com/"
+                  target="_blank_"
+                  >Try Once?<i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="main_box center">
-          <div class="icon center">
-            <i class="fas fa-desktop"></i>
-          </div>
-          <div class="box">
-            <h1>BookDesk</h1>
-            <p>
-              An Server for Comapny Was made where they can add Their staff and Employee's
-              and Employees can Book their Desk for max 2 days.
-            </p>
-            <div class="links">
-              <a
-                href="https://github.com/mayank-0407/book-anywhere.git"
-                target="_blank_"
-                >Github Repo<i class="fas fa-arrow-right"></i
-              ></a>
-              <a
-                href="https://mayank21121.pythonanywhere.com/"
-                target="_blank_"
-                >Try Once?<i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        
         <div class="main_box center">
           <div class="icon center">
             <i class="fas fa-cart-plus"></i>

@@ -316,7 +316,9 @@ footer{
     width: 100%;
     padding: 3em 0;
     flex-direction: column;
-    background: #1a1a1a;
+    /* background: #1a1a1a; */
+    background: rgba(255, 255, 255, 0.116);
+    backdrop-filter: blur(20px);
 }
 footer .social_media_icons{
     margin-top: 1em;
