@@ -1,14 +1,16 @@
-.contacts {
+.blog_link{
+  text-decoration: none;
+}
+.blogs {
     width: 100%;
-    background: rgba(255, 255, 255, 0.089);
-    backdrop-filter: blur(20px);
+    background: #1a1a1a;
     /* margin: 2em 0; */
     position: relative;
     flex-direction: column;
     overflow-x: hidden;
   }
-  .contacts::before,
-  .contacts::after {
+  .blogs::before,
+  .blogs::after {
     content: "";
     position: absolute;
     width: 20em;
@@ -26,11 +28,11 @@
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 50%;
   }
-  .contacts::before {
+  .blogs::before {
     left: -10em;
     bottom: 0;
   }
-  .contacts::after {
+  .blogs::after {
     right: -10em;
     top: 8em;
     background: #f953c6; /* fallback for old browsers */
@@ -45,13 +47,14 @@
       #f953c6
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
-  .contact_box {
+  .blog_box {
     flex-wrap: wrap;
   }
-  .contact_box .box {
-    margin: 2em 2em;
-    width: 36em;
-    height: 30em;
+  .blog_box .box {
+    text-align: center;
+    margin: 2em 1em;
+    width: 24em;
+    height: 36em;
     background: var(--bg-dark);
     background: rgba(255, 255, 255, 0.089);
     backdrop-filter: blur(20px);
@@ -65,7 +68,7 @@
     position: relative;
     z-index: 1;
   }
-  .contact_head {
+  .blog_head {
     font-size: 6em;
     font-family: var(--font);
   }
@@ -80,40 +83,6 @@ margin-top: 6px;
 float: left;
 width: 53%;
 margin-top: 6px;
-}
-input[type=text], select, textarea {
-width: 140%;
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 4px;
-resize: vertical;
-color: black;
-}
-input[type=email], select, textarea {
-width: 140%;
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 4px;
-resize: vertical;
-color: black;
-}
-
-label {
-padding: 12px 12px 12px 0;
-display: inline-block;
-}
-input[type=submit] {
-background-color: #04AA6D;
-color: white;
-padding: 12px 50px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-float: right;
-}
-
-input[type=submit]:hover {
-background-color: #45a049;
 }
 .formcontainer {
 border-radius: 5px;
@@ -134,3 +103,64 @@ clear: both;
     margin-top: 0;
 }
 }
+
+.blog_img img{
+  border-radius: 8px;
+}
+
+
+.blogs .blog_heading {
+  margin-bottom: 0.4em;
+  text-align: center;
+  height: 100px;
+  /* font-size: 6em; */
+  font-family: var(--font);
+}
+.blogs  .blog_box .box :is(h1, p) {
+  margin-bottom: 0.5em;
+}
+.blogs  .blog_box .box p{
+  opacity: 0.6;
+}
+.blogs  .blog_box .box .links a {
+  color: var(--light-color);
+  text-decoration: none;
+  margin-right: 0.4em;
+  transition: all 0.4s;
+}
+.blogs  .blog_box .box .links a i {
+  margin-left: 0.4em;
+  margin-top: 1.6em;
+  transition: all 0.4s;
+}
+.blogs  .blog_box .box .links a:hover {
+  color: var(--secondary-color);
+}
+.blogs .blog_box .box .links a:hover i {
+  transform: translateX(0.2em);
+  color: var(--secondary-color);
+}
+#particles-js2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 
+.blog-wrapper {
+display: flex;
+transition: transform 0.3s ease-in-out;
+}
+  
+.blog-list {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+} */
