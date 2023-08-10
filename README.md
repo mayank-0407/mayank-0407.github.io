@@ -1,5 +1,4 @@
 # All About Me!!
-# Who am I?? What I do?? What can I do?? Click this link to get to know about me!!
 #             My Portfolio
 ![image](https://user-images.githubusercontent.com/97796657/220732262-0942504f-7cca-447a-bd3b-7d7b2593dcfd.png)
 Visit - https://mayankaggarwal.live/
