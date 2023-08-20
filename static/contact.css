@@ -1,57 +1,174 @@
 .contacts {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.089);
+  backdrop-filter: blur(20px);
+  /* margin: 2em 0; */
+  position: relative;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.contacts::before,
+.contacts::after {
+  content: "";
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50%;
+}
+.contacts::before {
+  left: -10em;
+  bottom: 0;
+}
+.contacts::after {
+  right: -10em;
+  top: 8em;
+  background: #f953c6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b91d73,
+    #f953c6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b91d73,
+    #f953c6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.contact_box {
+  flex-wrap: wrap;
+}
+.contact_box .box {
+  margin: 2em 2em;
+  width: 36em;
+  height: 30em;
+  background: var(--bg-dark);
+  background: rgba(255, 255, 255, 0.089);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.068);
+  border-bottom: none;
+  /* display: flex; */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+.contact_head {
+  font-size: 6em;
+  font-family: var(--font);
+}
+/* my code */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 53%;
+  margin-top: 6px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 140%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  color: black;
+}
+input[type="email"],
+select,
+textarea {
+  width: 140%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  color: black;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.formcontainer {
+  border-radius: 5px;
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .contacts .contact_head {
+    margin-bottom: 0.4em;
+    font-size: 5em;
+    font-family: var(--font);
+    text-align: center;
+  }
+  .col-25,
+  .col-75,
+  input[type="submit"] {
     width: 100%;
-    background: rgba(255, 255, 255, 0.089);
-    backdrop-filter: blur(20px);
-    /* margin: 2em 0; */
-    position: relative;
-    flex-direction: column;
-    overflow-x: hidden;
+    margin-top: 0;
   }
-  .contacts::before,
-  .contacts::after {
-    content: "";
-    position: absolute;
-    width: 20em;
-    height: 20em;
-    background: #8e2de2; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #4a00e0,
-      #8e2de2
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #4a00e0,
-      #8e2de2
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 50%;
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
   }
-  .contacts::before {
-    left: -10em;
-    bottom: 0;
-  }
-  .contacts::after {
-    right: -10em;
-    top: 8em;
-    background: #f953c6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #b91d73,
-      #f953c6
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #b91d73,
-      #f953c6
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  .contact_box {
-    flex-wrap: wrap;
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
   }
   .contact_box .box {
     margin: 2em 2em;
     width: 36em;
-    height: 30em;
+    height: 45em;
     background: var(--bg-dark);
     background: rgba(255, 255, 255, 0.089);
     backdrop-filter: blur(20px);
@@ -65,72 +182,43 @@
     position: relative;
     z-index: 1;
   }
-  .contact_head {
-    font-size: 6em;
+}
+
+
+@media (max-width: 900px) {
+  .contacts .contact_head {
+    margin-bottom: 0.4em;
+    font-size: 5em;
     font-family: var(--font);
+    text-align: center;
   }
-/* my code */
-.col-25 {
-float: left;
-width: 25%;
-margin-top: 6px;
 }
 
-.col-75 {
-float: left;
-width: 53%;
-margin-top: 6px;
-}
-input[type=text], select, textarea {
-width: 140%;
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 4px;
-resize: vertical;
-color: black;
-}
-input[type=email], select, textarea {
-width: 140%;
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 4px;
-resize: vertical;
-color: black;
-}
-
-label {
-padding: 12px 12px 12px 0;
-display: inline-block;
-}
-input[type=submit] {
-background-color: #04AA6D;
-color: white;
-padding: 12px 50px;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-float: right;
-}
-
-input[type=submit]:hover {
-background-color: #45a049;
-}
-.formcontainer {
-border-radius: 5px;
-/* background-color: #f2f2f2; */
-padding: 20px;
-}
-/* Clear floats after the columns */
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-.col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-}
+@media (max-width: 459px) {
+  .contacts::after {
+    right: -10em;
+    top: 18em;
+    background: #f953c6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #b91d73,
+      #f953c6
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #b91d73,
+      #f953c6
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .contact_box .box {
+    width: 26em;
+    height: 45em;
+  }
+  .contacts .contact_head {
+    margin-bottom: 0.4em;
+    font-size: 5em;
+    font-family: var(--font);
+    text-align: center;
+  }
+  
 }

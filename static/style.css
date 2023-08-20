@@ -479,6 +479,9 @@ footer .social_media_icons a:hover i{
     height: 100%;
     padding: 2em 0.2em;
   }
+  #main .user_info .btn{
+    padding: 0.6em 1.5em;
+  }
 }
 
 @media (max-width: 350px) {

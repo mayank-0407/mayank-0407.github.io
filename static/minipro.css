@@ -13,17 +13,9 @@
   position: absolute;
   width: 20em;
   height: 20em;
-  background: #f953c6; 
-  background: -webkit-linear-gradient(
-    to right,
-    #b91d73,
-    #f953c6
-  ); 
-  background: linear-gradient(
-    to right,
-    #b91d73,
-    #f953c6
-  ); 
+  background: #f953c6;
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);
+  background: linear-gradient(to right, #b91d73, #f953c6);
   border-radius: 50%;
 }
 .mini_proj::before {
@@ -33,19 +25,11 @@
 .mini_proj::after {
   right: -10em;
   top: 8em;
-  background: #8e2de2; 
-  background: -webkit-linear-gradient(
-    to right,
-    #4a00e0,
-    #8e2de2
-  ); 
-  background: linear-gradient(
-    to right,
-    #4a00e0,
-    #8e2de2
-  ); 
+  background: #8e2de2;
+  background: -webkit-linear-gradient(to right, #4a00e0, #8e2de2);
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
 }
-.mini_proj .project_heading {
+.mini_proj .mini_project_heading {
   margin-bottom: 0.4em;
   font-size: 6em;
   font-family: var(--font);
@@ -103,4 +87,25 @@
   height: 100%;
   position: absolute;
   z-index: -1;
+}
+
+@media (max-width: 900px) {
+  .mini_proj .mini_project_heading {
+    margin-bottom: 0.4em;
+    font-size: 5em;
+    font-family: var(--font);
+  }
+}
+
+@media (max-width: 450px) {
+  .mini_proj .container .main_box .icon {
+    height: 100%;
+    padding: 0.2em;
+  }
+  .mini_proj .container .main_box {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 2em 0.2em;
+  }
 }
